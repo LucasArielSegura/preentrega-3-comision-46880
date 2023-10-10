@@ -1,0 +1,44 @@
+.section-principal{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+    article{
+        width: 320px;
+        height: 400px;
+        margin: 20px 80px;
+        background-color: #A2678A;
+        display:flex;
+        border-radius: 20px;
+        overflow: hidden;
+        div{
+            text-align: center;
+            h3{
+                padding: 5px;
+            }
+            p{
+                padding: 0 4px;
+            }
+            img{
+                width: 100%;
+                height: 250px;
+                object-fit: cover;
+            }
+        }
+        button{
+            width: 30%;
+            text-align: center;
+            border-radius: 15px;
+            box-shadow: 5px 5px  4px rgb(73, 73, 73) ;
+            background-color: #282A3A;
+            position: absolute;
+            bottom: 6px;
+            right: 6px;
+            a{
+                text-decoration: none;
+                color: white;
+            }
+        }
+    }
+}
