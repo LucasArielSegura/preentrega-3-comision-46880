@@ -1,0 +1,56 @@
+.section-blog{
+    display:grid;
+    width: 100%;
+    height: 100%;
+    justify-content:center;
+    row-gap:40px;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(3,1fr);
+    grid-template-areas:
+    "articulo1 . articulo2 articulo3"
+    "articulo4 articulo5 . articulo6"
+    "articulo7 . articulo8 .";
+    article{
+        width: 320px;
+        height: 400px;
+        background-color: #a1718e;
+        border-radius: 20px;
+        margin: 30px 60px;
+        overflow: hidden;
+        a{
+            text-decoration: none;
+            color: black;
+            text-align: center;
+            padding: 5px;
+        }
+        img{
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+    }
+    .articulo-1{
+        grid-area: articulo1;
+    }
+    .articulo-2{
+        grid-area: articulo2;
+    }
+    .articulo-3{
+        grid-area: articulo3;
+    }
+    .articulo-4{
+        grid-area: articulo4;
+    }
+    .articulo-5{
+        grid-area: articulo5;
+    }
+    .articulo-6{
+        grid-area: articulo6;
+    }
+    .articulo-7{
+        grid-area: articulo7;
+    }
+    .articulo-8{
+        grid-area: articulo8;
+    } 
+}
