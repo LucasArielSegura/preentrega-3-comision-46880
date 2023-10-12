@@ -1,9 +1,5 @@
 .section-principal{
-    display:flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: center;
-    padding: 20px;
+    @include flex(space-around,center,wrap,20px);
     article{
         width: 320px;
         height: 400px;
