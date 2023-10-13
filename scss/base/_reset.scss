@@ -5,5 +5,5 @@
 }
 
 body{
-    background-color: #282A3A;
+    background-color:map-get($colores,principal);
 }

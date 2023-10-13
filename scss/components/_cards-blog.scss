@@ -13,7 +13,7 @@
     article{
         width: 320px;
         height: 400px;
-        background-color: #a1718e;
+        background-color:map-get($colores, rosa);
         border-radius: 20px;
         margin: 30px 60px;
         overflow: hidden;
@@ -22,11 +22,20 @@
             color: black;
             text-align: center;
             padding: 5px;
+            h3{
+                font-size: 30px;
+                font-family: $ff-secundaria;
+            }
         }
         img{
             width: 100%;
             height: 200px;
             object-fit: cover;
+        }
+        p{
+            font-family: $ff-p;
+            font-size: 15px;
+            text-align: center;
         }
     }
     .articulo-1{

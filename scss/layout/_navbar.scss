@@ -1,6 +1,6 @@
 nav{
     height: 100%;
-    @include flex(space-between,center,none,none);
+    @include flex(space-between,center,none,none,row);
     img{
         display: flex;
         justify-content: flex-start;
@@ -16,9 +16,15 @@ nav{
                 text-decoration: none;
                 color: black;
                 text-transform: uppercase;
-                font-family: 'Oswald', sans-serif;
-                font-size: 20px;
+                font-family: $ff-secundaria;
+                font-size:20px;
                 margin: 4px;
+                &:hover {
+                    color: map-get($colores, rosa);
+                    transition: color 0.3s;
+                    text-shadow: 1px 1px 1px black;
+                    transition: text-shadow 0.3s;
+                }
             }
         }
     }

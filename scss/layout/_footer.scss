@@ -10,7 +10,7 @@ footer{
         figure{
             width: 100%;
             height: 90%;
-            @include flex(center,center,none,none);
+            @include flex(center,center,none,none,row);
             a{
                 img{
                     width: 150px;
@@ -20,7 +20,7 @@ footer{
         div{
             h2{
                 color: black;
-                font-size: 20px;
+                font-size:20px;
                 margin-bottom: 20px;
                 text-align:justify;
             }
