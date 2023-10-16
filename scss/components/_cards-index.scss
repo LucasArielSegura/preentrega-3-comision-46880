@@ -16,6 +16,9 @@
         height: 100%;
         grid-row: 1/2;
         grid-column: 3/5;
+        border-radius: 10px;
+        background-image: linear-gradient(to right top, #a2678a, #966083, #8a5a7b, #7e5374, #734d6c, #6e4d6c, #6a4d6c, #654d6c, #655474, #655b7c, #646283, #646989);
+        background-color:map-get($colores, rosa);
         @include flex(center,center,none,none,row);
         a{
             font-family: $ff-secundaria;
@@ -23,6 +26,9 @@
             text-decoration: none;
             text-shadow: 1px 1px 2px black;
             text-align:center;
+            h2{
+                font-size: 40px;
+            }
         }
     }
     .grid-planes2{

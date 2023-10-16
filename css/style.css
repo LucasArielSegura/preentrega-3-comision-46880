@@ -33,6 +33,7 @@ nav ul {
   display: flex;
   justify-content: center;
   gap: 60px;
+  margin-right: 5px;
 }
 nav ul li a {
   text-decoration: none;
@@ -105,6 +106,43 @@ footer .grupo2 {
   background-color: #B58D4A;
 }
 
+@media (max-width: 1024px) {
+  .navbar {
+    gap: 15px;
+  }
+  .section-principal {
+    padding: 2px;
+  }
+  .card {
+    margin: 20px 20px;
+  }
+  .section-videoteca {
+    margin: 5px;
+  }
+}
+@media (max-width: 768px) {
+  header {
+    height: 100%;
+    margin: 0 auto;
+    width: 100%;
+    padding: 1rem;
+  }
+  header nav {
+    height: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  header nav ul {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2px;
+  }
+  header nav ul li a {
+    margin: 0px;
+  }
+}
 .carousel-inner {
   height: 500px;
 }
@@ -128,6 +166,9 @@ footer .grupo2 {
   height: 100%;
   grid-row: 1/2;
   grid-column: 3/5;
+  border-radius: 10px;
+  background-image: linear-gradient(to right top, #a2678a, #966083, #8a5a7b, #7e5374, #734d6c, #6e4d6c, #6a4d6c, #654d6c, #655474, #655b7c, #646283, #646989);
+  background-color: #A2678A;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -141,6 +182,9 @@ footer .grupo2 {
   text-decoration: none;
   text-shadow: 1px 1px 2px black;
   text-align: center;
+}
+.grid .grid-planes1 a h2, .grid .grid-nosotros1 a h2, .grid .grid-blog1 a h2, .grid .grid-videoteca1 a h2 {
+  font-size: 40px;
 }
 .grid .grid-planes2, .grid .grid-nosotros3, .grid .grid-nosotros2, .grid .grid-blog3, .grid .grid-blog2, .grid .grid-videoteca3, .grid .grid-videoteca2, .grid .grid-planes3 {
   width: 100%;
@@ -239,6 +283,10 @@ footer .grupo2 {
   bottom: 6px;
   right: 6px;
 }
+.section-principal article button:hover {
+  transition: transform 1.5s;
+  transform: scale(1.1);
+}
 .section-principal article button a {
   text-decoration: none;
   color: white;
@@ -262,7 +310,7 @@ footer .grupo2 {
   color: #A2678A;
 }
 .section-videoteca div iframe {
-  width: 100%;
+  width: 80%;
 }
 
 .section-blog {
@@ -278,10 +326,14 @@ footer .grupo2 {
 .section-blog article {
   width: 320px;
   height: 400px;
-  background-color: #A2678A;
+  background-image: linear-gradient(to right top, #a2678a, #966083, #8a5a7b, #7e5374, #734d6c, #6e4d6c, #6a4d6c, #654d6c, #655474, #655b7c, #646283, #646989);
   border-radius: 20px;
   margin: 30px 60px;
   overflow: hidden;
+}
+.section-blog article:hover {
+  transition: transform 1.5s;
+  transform: scale(1.1);
 }
 .section-blog article a {
   text-decoration: none;
