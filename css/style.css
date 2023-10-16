@@ -142,6 +142,79 @@ footer .grupo2 {
   header nav ul li a {
     margin: 0px;
   }
+  .carousel-indicators {
+    display: none;
+  }
+  .carousel-inner {
+    height: 100%;
+  }
+  .section.principal {
+    padding: 0px;
+  }
+  .section.principal article {
+    margin: 10px 10px;
+  }
+  .section.principal .card-flex {
+    display: none;
+  }
+  .section.principal .card-ciclismo {
+    display: none;
+  }
+  .section-videoteca div {
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media (max-width: 425px) {
+  .card {
+    width: 260px;
+    height: 300px;
+  }
+  .card img {
+    height: 150px;
+  }
+  .grupo1 {
+    display: flex;
+    flex-direction: column;
+  }
+  .grupo1 figure a {
+    display: none;
+  }
+  .grupo1 .box {
+    justify-content: center;
+    align-items: center;
+  }
+  .grupo1 .box h2 {
+    margin-bottom: 0px;
+    text-align: center;
+  }
+  .grupo1 .box p {
+    margin: 2px 5px;
+  }
+  .grupo1 .box div {
+    display: flex;
+    justify-content: center;
+  }
+  .grupo1 .box div a {
+    width: 35px;
+    height: 35px;
+    background-color: #C69749;
+  }
+  .grupo1 .box div a img {
+    padding: 3px;
+  }
+}
+@media (max-width: 320px) {
+  .carousel {
+    display: none;
+  }
+  .card {
+    width: 200px;
+    height: 260px;
+  }
+  .card div img {
+    height: 100px;
+  }
 }
 .carousel-inner {
   height: 500px;

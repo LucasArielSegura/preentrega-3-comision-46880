@@ -1,0 +1,41 @@
+@media (max-width: 425px){
+    .card{
+        width: 260px;
+        height: 300px;
+        img{
+            height: 150px;
+        }
+    }
+    .grupo1{
+        display: flex;
+        flex-direction: column;
+        figure{
+            a{
+                display: none;
+            }
+        }
+        .box{
+            justify-content: center;
+            align-items: center;
+            h2{
+                margin-bottom: 0px;
+                text-align: center;
+            }
+            p{
+                margin: 2px 5px;
+            }
+            div{
+                display: flex;
+                justify-content: center;
+                a{
+                    width:35px;
+                    height: 35px;
+                    background-color: #C69749;
+                    img{
+                        padding: 3px;
+                    }
+                }
+            }
+        }
+    }
+}

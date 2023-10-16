@@ -22,4 +22,29 @@
             }
         }
     }
+    .carousel-indicators{
+        display:none;
+    }
+    .carousel-inner{
+        height: 100%;   
+    }
+    .section.principal{
+        padding:0px;
+        article{
+            margin: 10px 10px;
+        }
+        .card-flex{
+            display: none;
+        }
+        .card-ciclismo{
+            display: none;
+        }
+    }
+
+    .section-videoteca{
+        div{
+            display:flex;
+            flex-direction: column;
+        }
+    }
 }

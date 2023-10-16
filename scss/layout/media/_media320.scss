@@ -1,0 +1,14 @@
+@media (max-width: 320px){
+    .carousel{
+        display:none;
+    }
+    .card{
+        width: 200px;
+        height: 260px;
+        div{
+            img{
+                height: 100px;
+            }
+        }
+    }
+}
