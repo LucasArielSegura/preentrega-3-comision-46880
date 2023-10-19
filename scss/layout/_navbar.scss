@@ -1,6 +1,12 @@
 nav{
     height: 100%;
-    @include flex(space-between,center,none,none,row);
+    @include flex(space-between,center,wrap,none,row);
+    input{
+        display: none;
+    }
+    label{
+        display: none;
+    }
     img{
         display: flex;
         justify-content: flex-start;

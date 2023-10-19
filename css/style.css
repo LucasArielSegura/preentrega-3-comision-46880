@@ -9,6 +9,7 @@ body {
 }
 
 header {
+  width: 100%;
   background-color: #C69749;
   height: 80px;
   padding: 0px 2px;
@@ -19,9 +20,15 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  flex-wrap: none;
+  flex-wrap: wrap;
   padding: none;
   flex-direction: row;
+}
+nav input {
+  display: none;
+}
+nav label {
+  display: none;
 }
 nav img {
   display: flex;
@@ -119,6 +126,9 @@ footer .grupo2 {
   .section-videoteca {
     margin: 5px;
   }
+  .carousel-inner div {
+    height: 500px;
+  }
 }
 @media (max-width: 768px) {
   header {
@@ -142,29 +152,25 @@ footer .grupo2 {
   header nav ul li a {
     margin: 0px;
   }
-  .carousel-indicators {
-    display: none;
-  }
-  .carousel-inner {
-    height: 100%;
-  }
-  .section.principal {
-    padding: 0px;
-  }
-  .section.principal article {
-    margin: 10px 10px;
-  }
-  .section.principal .card-flex {
-    display: none;
-  }
-  .section.principal .card-ciclismo {
-    display: none;
-  }
-  .section-videoteca div {
-    display: flex;
-    flex-direction: column;
-  }
 }
+.section.principal {
+  padding: 0px;
+}
+.section.principal article {
+  margin: 10px 10px;
+}
+.section.principal .card-flex {
+  display: none;
+}
+.section.principal .card-ciclismo {
+  display: none;
+}
+
+.section-videoteca div {
+  display: flex;
+  flex-direction: column;
+}
+
 @media (max-width: 425px) {
   .card {
     width: 260px;
@@ -216,8 +222,21 @@ footer .grupo2 {
     height: 100px;
   }
 }
-.carousel-inner {
-  height: 500px;
+.carousel {
+  height: 600px;
+  width: 100%;
+}
+.carousel .carousel-inner {
+  height: 600px;
+}
+.carousel .carousel-inner div {
+  height: 100%;
+}
+.carousel .carousel-inner div a {
+  height: 100%;
+}
+.carousel .carousel-inner div a img {
+  height: 100%;
 }
 
 .grid {
