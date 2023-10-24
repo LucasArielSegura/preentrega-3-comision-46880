@@ -11,12 +11,11 @@
     "articulo4 articulo5 . articulo6"
     "articulo7 . articulo8 .";
     article{
-        width: 320px;
+        width: auto;
         height: 400px;
         background-image: linear-gradient(to right top, #a2678a, #966083, #8a5a7b, #7e5374, #734d6c, #6e4d6c, #6a4d6c, #654d6c, #655474, #655b7c, #646283, #646989);
-        // background-color:map-get($colores, rosa);
         border-radius: 20px;
-        margin: 30px 60px;
+        margin: 30px 40px;
         overflow: hidden;
         &:hover{
             transition: transform 1.5s;

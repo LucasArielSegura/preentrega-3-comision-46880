@@ -113,130 +113,8 @@ footer .grupo2 {
   background-color: #B58D4A;
 }
 
-@media (max-width: 1024px) {
-  .navbar {
-    gap: 15px;
-  }
-  .section-principal {
-    padding: 2px;
-  }
-  .card {
-    margin: 20px 20px;
-  }
-  .section-videoteca {
-    margin: 5px;
-  }
-  .carousel-inner div {
-    height: 500px;
-  }
-}
-@media (max-width: 768px) {
-  header {
-    height: 100%;
-    margin: 0 auto;
-    width: 100%;
-    padding: 1rem;
-  }
-  header nav {
-    height: 100%;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
-  header nav ul {
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 2px;
-  }
-  header nav ul li a {
-    margin: 0px;
-  }
-}
-.section.principal {
-  padding: 0px;
-}
-.section.principal article {
-  margin: 10px 10px;
-}
-.section.principal .card-flex {
-  display: none;
-}
-.section.principal .card-ciclismo {
-  display: none;
-}
-
-.section-videoteca div {
-  display: flex;
-  flex-direction: column;
-}
-
-@media (max-width: 425px) {
-  .card {
-    width: 260px;
-    height: 300px;
-  }
-  .card img {
-    height: 150px;
-  }
-  .grupo1 {
-    display: flex;
-    flex-direction: column;
-  }
-  .grupo1 figure a {
-    display: none;
-  }
-  .grupo1 .box {
-    justify-content: center;
-    align-items: center;
-  }
-  .grupo1 .box h2 {
-    margin-bottom: 0px;
-    text-align: center;
-  }
-  .grupo1 .box p {
-    margin: 2px 5px;
-  }
-  .grupo1 .box div {
-    display: flex;
-    justify-content: center;
-  }
-  .grupo1 .box div a {
-    width: 35px;
-    height: 35px;
-    background-color: #C69749;
-  }
-  .grupo1 .box div a img {
-    padding: 3px;
-  }
-}
-@media (max-width: 320px) {
-  .carousel {
-    display: none;
-  }
-  .card {
-    width: 200px;
-    height: 260px;
-  }
-  .card div img {
-    height: 100px;
-  }
-}
-.carousel {
-  height: 600px;
-  width: 100%;
-}
-.carousel .carousel-inner {
-  height: 600px;
-}
-.carousel .carousel-inner div {
-  height: 100%;
-}
-.carousel .carousel-inner div a {
-  height: 100%;
-}
-.carousel .carousel-inner div a img {
-  height: 100%;
+.slide img {
+  height: 65vh;
 }
 
 .grid {
@@ -416,11 +294,11 @@ footer .grupo2 {
   grid-template-areas: "articulo1 . articulo2 articulo3" "articulo4 articulo5 . articulo6" "articulo7 . articulo8 .";
 }
 .section-blog article {
-  width: 320px;
+  width: auto;
   height: 400px;
   background-image: linear-gradient(to right top, #a2678a, #966083, #8a5a7b, #7e5374, #734d6c, #6e4d6c, #6a4d6c, #654d6c, #655474, #655b7c, #646283, #646989);
   border-radius: 20px;
-  margin: 30px 60px;
+  margin: 30px 40px;
   overflow: hidden;
 }
 .section-blog article:hover {
