@@ -11,8 +11,7 @@ body {
 header {
   width: 100%;
   background-color: #C69749;
-  height: 80px;
-  padding: 0px 2px;
+  margin: 0 auto;
 }
 
 nav {
@@ -21,28 +20,31 @@ nav {
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
-  padding: none;
+  padding: 1rem 1.5rem;
   flex-direction: row;
 }
-nav input {
+nav .logo {
+  justify-content: center;
+  align-items: center;
+}
+nav .logo img {
+  display: flex;
+  justify-content: flex-start;
+  height: 80px;
+}
+nav #toggle {
   display: none;
 }
 nav label {
   display: none;
 }
-nav img {
-  display: flex;
-  justify-content: flex-start;
-  height: 80px;
-}
-nav ul {
+nav div ul {
   list-style: none;
   display: flex;
   justify-content: center;
-  gap: 60px;
-  margin-right: 5px;
+  gap: 2rem;
 }
-nav ul li a {
+nav div ul li a {
   text-decoration: none;
   color: black;
   text-transform: uppercase;
@@ -50,7 +52,7 @@ nav ul li a {
   font-size: 20px;
   margin: 4px;
 }
-nav ul li a:hover {
+nav div ul li a:hover {
   color: #A2678A;
   transition: color 0.3s;
   text-shadow: 1px 1px 1px black;
@@ -419,6 +421,101 @@ footer .grupo2 {
   color: #404040;
   outline: none;
   font-size: 15px;
+}
+
+@media (max-width: 1024px) {
+  .navbar {
+    gap: 15px;
+  }
+  .section-principal {
+    padding: 2px;
+  }
+  .card {
+    margin: 20px 20px;
+  }
+  .section-videoteca {
+    margin: 5px;
+  }
+  .carousel-inner div {
+    height: 500px;
+  }
+}
+@media (max-width: 768px) {
+  nav .logo img {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+  }
+  nav label {
+    display: flex;
+  }
+  nav #toggle:checked ~ .navbar {
+    height: 100%;
+  }
+  nav .navbar {
+    width: 100%;
+    height: 0;
+    overflow: hidden;
+  }
+  nav .navbar ul {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0.5rem 0px;
+  }
+}
+@media (max-width: 425px) {
+  .card {
+    width: 260px;
+    height: 300px;
+  }
+  .card img {
+    height: 150px;
+  }
+  .grupo1 {
+    display: flex;
+    flex-direction: column;
+  }
+  .grupo1 figure a {
+    display: none;
+  }
+  .grupo1 .box {
+    justify-content: center;
+    align-items: center;
+  }
+  .grupo1 .box h2 {
+    margin-bottom: 0px;
+    text-align: center;
+  }
+  .grupo1 .box p {
+    margin: 2px 5px;
+  }
+  .grupo1 .box div {
+    display: flex;
+    justify-content: center;
+  }
+  .grupo1 .box div a {
+    width: 35px;
+    height: 35px;
+    background-color: #C69749;
+  }
+  .grupo1 .box div a img {
+    padding: 3px;
+  }
+}
+@media (max-width: 320px) {
+  .carousel {
+    display: none;
+  }
+  .card {
+    width: 200px;
+    height: 260px;
+  }
+  .card div img {
+    height: 100px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

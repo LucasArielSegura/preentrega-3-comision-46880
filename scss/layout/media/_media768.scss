@@ -1,71 +1,30 @@
 @media (max-width: 768px){
-    header{
-        height: 100%;
-        margin: 0 auto;
-        width: 100%;
-        padding: 1rem;
-        nav{
-            height: 100%;
-            flex-direction:column;
-            align-items: center;
-            justify-content: center;
-            ul{
+    nav{
+        .logo{
+            img{
+                display: flex;
                 flex-direction: column;
                 justify-content: center;
                 align-items: center;
-                gap:2px;
-                li{
-                    a{
-                        margin:0px;
-                    }
-                }
+                height: 80px;
+            }
+        }
+        label{
+            display: flex;
+        }
+        #toggle:checked ~ .navbar{
+            height: 100%;
+        }
+        .navbar{
+            width: 100%;
+            height: 0;
+            overflow: hidden;
+            ul{
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                padding: 0.5rem 0px;
             }
         }
     }
 }
-//     nav{
-//         .menu{
-//             width: 100%;
-//             height: 100%;
-//             overflow: hidden;
-//             ul{
-//                 flex-direction: column;
-//                 align-items: center;
-//                 padding: 0.5rem 0px;
-//             }
-//         }
-//         label{
-//             display: flex;
-//         }
-//         #toggle:checked ~ .menu{
-//                 height: 100%;
-//             }
-//         } 
-//     }
-// }
-
-    // .carousel-indicators{
-    //     display:none;
-    // }
-    // .carousel-inner{
-    //     height: 100%;   
-    // }
-    .section.principal{
-        padding:0px;
-        article{
-            margin: 10px 10px;
-        }
-        .card-flex{
-            display: none;
-        }
-        .card-ciclismo{
-            display: none;
-        }
-    }
-
-    .section-videoteca{
-        div{
-            display:flex;
-            flex-direction: column;
-        }
-    }

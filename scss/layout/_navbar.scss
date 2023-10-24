@@ -1,36 +1,41 @@
 nav{
     height: 100%;
-    @include flex(space-between,center,wrap,none,row);
-    input{
+    @include flex(space-between,center,wrap,1rem 1.5rem,row);
+    .logo{
+        justify-content: center;
+        align-items: center;
+        img{
+            display: flex;
+            justify-content: flex-start;
+            height: 80px;
+        }
+    }
+    #toggle{
         display: none;
     }
     label{
-        display: none;
+        display:none;
     }
-    img{
-        display: flex;
-        justify-content: flex-start;
-        height: 80px;
-    }
-    ul{
-        list-style: none;
-        display: flex;
-        justify-content: center;
-        gap:60px;
-        margin-right: 5px;
-        li{
-            a{
-                text-decoration: none;
-                color: black;
-                text-transform: uppercase;
-                font-family: $ff-secundaria;
-                font-size:20px;
-                margin: 4px;
-                &:hover {
-                    color: map-get($colores, rosa);
-                    transition: color 0.3s;
-                    text-shadow: 1px 1px 1px black;
-                    transition: text-shadow 0.3s;
+    div{
+        ul{
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            li{
+                a{
+                    text-decoration: none;
+                    color: black;
+                    text-transform: uppercase;
+                    font-family: $ff-secundaria;
+                    font-size:20px;
+                    margin: 4px;
+                    &:hover {
+                        color: map-get($colores, rosa);
+                        transition: color 0.3s;
+                        text-shadow: 1px 1px 1px black;
+                        transition: text-shadow 0.3s;
+                    }
                 }
             }
         }
