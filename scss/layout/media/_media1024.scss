@@ -1,8 +1,5 @@
 @media (max-width: 1024px){
     .slide{
-        // .carousel-indicators{
-        //     display: none;
-        // }
         img{
             height:45vh;
         }
@@ -15,17 +12,35 @@
     .navbar{
         gap:15px;
     }
+
     .grid{
         grid-template-columns: repeat(4,200px);
         grid-template-rows: repeat(4,200px);
     }
+
     .section-principal{
         padding:2px;
     }
+
     .card{
         margin:20px 20px;
     }
+
     .section-videoteca{
         margin: 5px;
+    }
+
+    .section-blog{
+        grid-template-columns: repeat(3,1fr);
+        grid-template-areas: 
+        "articulo1 articulo2 articulo3"
+        "articulo4 articulo5 articulo6"
+        "articulo7 . articulo8";
+        article{
+            height: 300px;
+            p{
+                display: none;
+            }
+        }
     }
 }

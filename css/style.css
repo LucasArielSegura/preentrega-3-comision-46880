@@ -451,6 +451,16 @@ footer .grupo2 {
   .section-videoteca {
     margin: 5px;
   }
+  .section-blog {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: "articulo1 articulo2 articulo3" "articulo4 articulo5 articulo6" "articulo7 . articulo8";
+  }
+  .section-blog article {
+    height: 300px;
+  }
+  .section-blog article p {
+    display: none;
+  }
 }
 @media (max-width: 768px) {
   header {
@@ -506,6 +516,9 @@ footer .grupo2 {
   }
   .grid .grid-nosotros3 {
     grid-column: 3/4;
+  }
+  .contacto-1 h3 {
+    display: none;
   }
   .grupo1 {
     display: flex;
@@ -589,6 +602,20 @@ footer .grupo2 {
   .card img {
     height: 150px;
   }
+  .section-videoteca {
+    display: flex;
+    flex-direction: column;
+  }
+  .section-blog {
+    display: flex;
+    flex-direction: column;
+  }
+  .section-nosotros {
+    background-position: 47% 0%;
+  }
+  .contacto-1 {
+    display: none;
+  }
   .grupo1 {
     display: flex;
     flex-direction: column;
@@ -640,6 +667,13 @@ footer .grupo2 {
   .box-1 {
     display: none;
   }
+  .section-principal article {
+    width: 300px;
+    height: 360px;
+  }
+  .section-principal article div p {
+    display: none;
+  }
   footer .grupo1 {
     flex-direction: row;
   }
@@ -661,12 +695,22 @@ footer .grupo2 {
   .carousel {
     display: none;
   }
-  .card {
-    width: 200px;
-    height: 260px;
+  .section-principal article {
+    width: 100%;
+    height: 300px;
   }
-  .card div img {
-    height: 100px;
+  .section-principal article div h3 {
+    font-size: 28px;
+  }
+  .section-principal article div p {
+    display: none;
+  }
+  .section-principal article div img {
+    width: 100%;
+    height: 180px;
+  }
+  .section-principal article button {
+    width: 50%;
   }
   footer .grupo1 .box {
     padding-left: 20px;

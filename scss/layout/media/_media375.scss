@@ -3,6 +3,18 @@
         display:none;
     }
 
+.section-principal{
+    article{
+        width: 300px;
+        height: 360px;
+        div{
+            p{
+                display: none;
+            }
+        }
+    }
+}
+
     footer{
         .grupo1{
             flex-direction: row;

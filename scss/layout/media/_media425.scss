@@ -56,6 +56,24 @@
             height: 150px;
         }
     }
+
+.section-videoteca{
+    display: flex;
+    flex-direction: column;
+}
+
+.section-blog{
+    display:flex;
+    flex-direction: column;
+}
+
+.section-nosotros{
+    background-position: 47% 0%;
+}
+.contacto-1{
+        display: none;
+}
+
     .grupo1{
         display: flex;
         flex-direction: column;
