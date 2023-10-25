@@ -692,9 +692,6 @@ footer .grupo2 {
   }
 }
 @media (max-width: 320px) {
-  .carousel {
-    display: none;
-  }
   .section-principal article {
     width: 100%;
     height: 300px;
