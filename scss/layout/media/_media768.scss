@@ -1,29 +1,94 @@
 @media (max-width: 768px){
-    nav{
-        .logo{
-            img{
+    header{
+        height: 100%;
+        nav{
+            .logo{
+                img{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    height: 80px;
+                }
+            }
+            label{
+                display: flex;
+            }
+            #toggle:checked ~ .navbar{
+                height: 100%;
+            }
+            .navbar{
+                width: 100%;
+                height: 0;
+                overflow: hidden;
+                ul{
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    padding: 0.5rem 0px;
+                }
+            }
+        }
+    }
+
+    .grid{
+        grid-template-columns: repeat(3,200px);
+        .grid-planes1{
+            grid-column:3/4;
+            a{
+                h2{
+                    font-size: 20px;
+                }
+            }
+        }
+        .grid-videoteca1{
+            grid-column:1/2;
+        }
+        .grid-videoteca2{
+            grid-column:2/3;
+        }
+        .grid-videoteca3{
+            grid-column:3/4;
+        }
+        .grid-nosotros1{
+            grid-column:1/2;
+        }
+        .grid-nosotros2{
+            grid-column:2/3;
+        }
+        .grid-nosotros3{
+            grid-column:3/4;
+        }
+    }
+
+    .grupo1{
+        display: flex;
+        flex-direction: column;
+        .box{
+            justify-content: center;
+            align-items: center;
+            h2{
+                margin-bottom: 0px;
+                text-align: center;
+            }
+            p{
+                margin: 2px 5px;
+                text-align: center;
+            }
+            div{
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
                 align-items: center;
-                height: 80px;
-            }
-        }
-        label{
-            display: flex;
-        }
-        #toggle:checked ~ .navbar{
-            height: 100%;
-        }
-        .navbar{
-            width: 100%;
-            height: 0;
-            overflow: hidden;
-            ul{
-                flex-direction: column;
-                align-items: center;
-                justify-content: center;
-                padding: 0.5rem 0px;
+                a{
+                    width: 35px;
+                    height: 40px;
+                    background-color: #C69749;
+                    img{
+                        padding: 3px;
+                        width: 100%;
+                    }
+                }
             }
         }
     }
