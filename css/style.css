@@ -602,6 +602,23 @@ footer .grupo2 {
   .card img {
     height: 150px;
   }
+  .section-principal article {
+    width: 100%;
+    height: 300px;
+  }
+  .section-principal article div h3 {
+    font-size: 28px;
+  }
+  .section-principal article div p {
+    display: none;
+  }
+  .section-principal article div img {
+    width: 100%;
+    height: 210px;
+  }
+  .section-principal article button {
+    width: 50%;
+  }
   .section-videoteca {
     display: flex;
     flex-direction: column;
@@ -661,6 +678,24 @@ footer .grupo2 {
     width: 100%;
     text-align: center;
     padding-top: 0px;
+  }
+}
+@media (max-width: 389px) {
+  footer .grupo1 {
+    flex-direction: row;
+  }
+  footer .grupo1 figure {
+    display: none;
+  }
+  footer .grupo1 .box {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  footer .grupo1 .box .red-social {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
   }
 }
 @media (max-width: 375px) {
