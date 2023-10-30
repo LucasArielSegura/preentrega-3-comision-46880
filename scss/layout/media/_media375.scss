@@ -17,19 +17,11 @@
 
     footer{
         .grupo1{
-            flex-direction: row;
             figure{
                 display: none;
-                }
-                .box{
-                    flex-direction: row;
-                    justify-content: center;
-                    align-items: center;
-                    .red-social{
-                        flex-direction: row;
-                        justify-content: center;
-                        align-items: center;
-                    }
+            }
+            .box{
+                padding-left: 43px;
             }
         }
     }

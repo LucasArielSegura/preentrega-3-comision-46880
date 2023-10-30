@@ -61,11 +61,31 @@
         }
     }
 
-    .contacto-1{
-        h3{
-            display: none;
+    .section-videoteca{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .section-blog{
+        display: flex;
+        flex-wrap: wrap;
+        article{
+            width:200px;
+            height:300px;
+            a{
+                h3{
+                    font-size: 20px;
+                }
+            }
         }
     }
+
+
+    .section-contacto{
+        display: flex;
+        flex-wrap: wrap;
+        padding-top: 5px;
+        }
 
     .grupo1{
         display: flex;
@@ -76,6 +96,7 @@
             h2{
                 margin-bottom: 0px;
                 text-align: center;
+                font-size: 17px;
             }
             p{
                 margin: 2px 5px;

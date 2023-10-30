@@ -319,12 +319,12 @@ footer .grupo2 {
   padding: 5px;
 }
 .section-blog article a h3 {
-  font-size: 30px;
+  font-size: 25px;
   font-family: "Roboto", sans-serif;
 }
 .section-blog article img {
   width: 100%;
-  height: 200px;
+  height: 180px;
   object-fit: cover;
 }
 .section-blog article p {
@@ -461,6 +461,13 @@ footer .grupo2 {
   .section-blog article p {
     display: none;
   }
+  .contacto-1 {
+    display: flex;
+  }
+  .contacto-1 h3 {
+    flex-wrap: wrap;
+    font-size: 22px;
+  }
 }
 @media (max-width: 768px) {
   header {
@@ -517,8 +524,25 @@ footer .grupo2 {
   .grid .grid-nosotros3 {
     grid-column: 3/4;
   }
-  .contacto-1 h3 {
-    display: none;
+  .section-videoteca {
+    display: flex;
+    flex-direction: column;
+  }
+  .section-blog {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .section-blog article {
+    width: 200px;
+    height: 300px;
+  }
+  .section-blog article a h3 {
+    font-size: 20px;
+  }
+  .section-contacto {
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 5px;
   }
   .grupo1 {
     display: flex;
@@ -531,6 +555,7 @@ footer .grupo2 {
   .grupo1 .box h2 {
     margin-bottom: 0px;
     text-align: center;
+    font-size: 17px;
   }
   .grupo1 .box p {
     margin: 2px 5px;
@@ -603,8 +628,8 @@ footer .grupo2 {
     height: 150px;
   }
   .section-principal article {
-    width: 100%;
-    height: 300px;
+    width: 300px;
+    height: 340px;
   }
   .section-principal article div h3 {
     font-size: 28px;
@@ -619,27 +644,8 @@ footer .grupo2 {
   .section-principal article button {
     width: 50%;
   }
-  .section-videoteca {
-    display: flex;
-    flex-direction: column;
-  }
-  .section-blog {
-    display: flex;
-    flex-direction: column;
-  }
   .section-nosotros {
     background-position: 47% 0%;
-  }
-  .contacto-1 {
-    display: none;
-  }
-  .grupo1 {
-    display: flex;
-    flex-direction: column;
-  }
-  .grupo1 .box {
-    justify-content: center;
-    align-items: center;
   }
   .grupo1 .box a {
     width: 100px;
@@ -649,26 +655,15 @@ footer .grupo2 {
     width: 100%;
     height: 100%;
   }
-  .grupo1 .box h2 {
-    margin-bottom: 0px;
-    text-align: center;
-  }
-  .grupo1 .box p {
-    margin: 2px 5px;
-    text-align: center;
-  }
   .grupo1 .box .secundario {
     display: none;
   }
-  .grupo1 .box div {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  .grupo1 .box h2 {
+    font-size: 15px;
   }
   .grupo1 .box div a {
-    width: 40px;
-    height: 40px;
+    width: 30px;
+    height: 30px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -678,24 +673,6 @@ footer .grupo2 {
     width: 100%;
     text-align: center;
     padding-top: 0px;
-  }
-}
-@media (max-width: 389px) {
-  footer .grupo1 {
-    flex-direction: row;
-  }
-  footer .grupo1 figure {
-    display: none;
-  }
-  footer .grupo1 .box {
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-  }
-  footer .grupo1 .box .red-social {
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
   }
 }
 @media (max-width: 375px) {
@@ -709,21 +686,11 @@ footer .grupo2 {
   .section-principal article div p {
     display: none;
   }
-  footer .grupo1 {
-    flex-direction: row;
-  }
   footer .grupo1 figure {
     display: none;
   }
   footer .grupo1 .box {
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-  }
-  footer .grupo1 .box .red-social {
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
+    padding-left: 43px;
   }
 }
 @media (max-width: 320px) {
@@ -745,7 +712,7 @@ footer .grupo2 {
     width: 50%;
   }
   footer .grupo1 .box {
-    padding-left: 20px;
+    padding-left: 25px;
   }
   footer .grupo1 .box .red-social {
     flex-wrap: wrap;
