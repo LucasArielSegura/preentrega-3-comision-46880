@@ -1,4 +1,4 @@
-# PREENTREGA 3 COMISION-46880 "Entrenamiento"
+# Trabajo Final COMISION-46880 "Entrenamiento"
 
 ## Profesor:
 - Cardenas, Maximiliano
