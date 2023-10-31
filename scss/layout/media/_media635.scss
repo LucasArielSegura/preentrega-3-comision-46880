@@ -1,0 +1,40 @@
+@media (max-width: 635px){
+    .grid{
+        grid-template-columns: repeat(2,1fr);
+        .grid-planes1{
+            grid-column:2/3;
+            a{
+                h2{
+                    font-size: 20px;
+                }
+            }
+        }
+        .grid-planes3{
+            display: none;
+        }
+        .grid-videoteca1{
+            grid-column:1/2;
+        }
+        .grid-videoteca2{
+            grid-column:2/3;
+        }
+        .grid-videoteca3{
+            display: none;
+        }
+        .grid-blog1{
+            grid-column: 2/3;
+        }
+        .grid-blog3{
+            display: none;
+        }
+        .grid-nosotros1{
+            grid-column:1/2;
+        }
+        .grid-nosotros2{
+            grid-column:2/3;
+        }
+        .grid-nosotros3{
+            display: none;
+        }
+    }
+}

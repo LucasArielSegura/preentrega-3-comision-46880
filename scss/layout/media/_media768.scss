@@ -33,13 +33,21 @@
 
     .grid{
         grid-template-columns: repeat(3,200px);
+        column-gap: none;
+
         .grid-planes1{
             grid-column:3/4;
+            width: 175px;
+            height: 175px;
             a{
                 h2{
                     font-size: 20px;
                 }
             }
+        }
+        .grid-planes2{
+            width: 175px;
+            height: 175px;
         }
         .grid-videoteca1{
             grid-column:1/2;
